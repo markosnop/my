@@ -1,23 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import { Outlet } from 'react-router-dom';
+import Contents from './Contents';
+import Footer from './Footer';
+import './Header';
+import Header from './Header';
 
 function App() {
+  const nome = 'Marcus'
+  const ano = 2023
+
+  const listadeTarefas =[
+    { id:1, nome_tarefa: "estudar html"},
+    { id:2, nome_tarefa: "estudar css"},
+    { id:3, nome_tarefa: "estudar java script"},
+    { id:4, nome_tarefa: "estudar react"}
+  ]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header />
+      <Outlet/>
+      <Contents nome={nome} lista={listadeTarefas}/>
+      <Footer nome={nome} ano={ano}/>
     </div>
   );
 }
