@@ -1,9 +1,11 @@
-function Sobre(){
-    return(
-        <div>
-            <h2>Sobre</h2>
-        </div>
+function Sobre() {
+    return (
+      <div>
+        <h2>Sobre</h2>
+      </div>
     );
+  }
+  
+  export default Sobre;
 
-}
-export default Sobre
+ 

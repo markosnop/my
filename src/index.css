@@ -11,10 +11,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-a i{
-  color: black;
+
+a i {
+  color: white;
 }
 
-a i:hover{
-  color: blue;
+a i:hover {
+  color: rgb(66, 118, 185);
+}
+
+#face {
+  color: rgb(247, 246, 249);
+}
+
+#face:hover {
+  color: rgb(65, 135, 215);
 }
