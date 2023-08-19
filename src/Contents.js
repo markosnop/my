@@ -6,7 +6,7 @@ function Contents({ nome, lista }) {
   const addTarefa = (event)=>{
     event.preventDefault()
     const tarefaObject ={
-      nome : tarefa ,
+      nome_tarefas : tarefa ,
       id: tarefas.legth + 1,
     }
     setTarefas( tarefas.concat (tarefaObject))
@@ -23,7 +23,7 @@ function Contents({ nome, lista }) {
     <div className="container">
       <h2>Aprendendo React</h2>
       <p>Seja bem vindo, {nome}!</p>
-      <h3>Lista de tarefas:</h3>
+      <ExibeTarefas tarefas={tarefas}/>
       <ul>
         {lista.map((tarefa) => (
           <li key={tarefa.id}>{tarefa.nome_tarefa}</li>
