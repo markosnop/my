@@ -17,13 +17,13 @@ a i {
 }
 
 a i:hover {
-  color: rgb(66, 118, 185);
+  color: blue;
 }
 
 #face {
-  color: rgb(247, 246, 249);
+  color: rgb(255, 255, 255);
 }
 
 #face:hover {
-  color: rgb(65, 135, 215);
+  color: blue;
 }

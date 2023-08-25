@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/home',
+        path: '/',
         element: <Contents lista={listaTarefas} nome={nome} ano={ano}/>
       },
       {
